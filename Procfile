@@ -1,1 +1,1 @@
-worker: python devin.py
+worker: python3 devin.py
