@@ -22,11 +22,11 @@ async def SendMessage(ctx):
 async def schedule_daily_quote():
     now = datetime.datetime.now()
     then = now + datetime.timedelta(days=1)
-    then = now.replace(hour=8, minute=0)
+    then = then.replace(hour=8, minute=0)
     wait_time = (then-now).total_seconds()
     await asyncio.sleep(wait_time)
     channel = bot.get_channel(1096388182783836170)
-    await channel.send("Good.morning!")
+    await channel.send("Good morning! The time is: ", str(datetime.datetime.now()), " and remember: \"Never put off to tomorrow what can be done today\""))
 
 
 
