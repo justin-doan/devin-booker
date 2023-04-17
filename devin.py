@@ -26,7 +26,7 @@ async def schedule_daily_quote():
     wait_time = (then-now).total_seconds()
     await asyncio.sleep(wait_time)
     channel = bot.get_channel(1096388182783836170)
-    await channel.send("Good morning! The time is: ", str(datetime.datetime.now()), " and remember: \"Never put off to tomorrow what can be done today\""))
+    await channel.send("Good morning! The time is: ", str(datetime.datetime.now()), " and remember: \"Never put off to tomorrow what can be done today\"")
 
 
 
