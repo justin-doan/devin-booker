@@ -46,4 +46,4 @@ async def on_ready():
     loop.close()
 
 if __name__ == '__main__':
-    bot.run('NDg0MDU2NDEwMDU4MTI5NDMw.GOYdIi.ZOli3NBwmOIXBzcVmEuziyeLvHC2vN-xYqT6qI')
+    bot.run(os.environ['DISCORD_TOKEN'])
